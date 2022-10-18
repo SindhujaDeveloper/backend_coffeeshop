@@ -20,7 +20,9 @@ export class UserService {
 	}
 
 	public async findAndUpdateUser(Params: createUserInterface) {
-		return await userList.findOneAndReplace({ Mobileno: Params.Mobileno }, { ...Params });
+		// return await userList.findOneAndReplace({ Mobileno: Params.Mobileno }, { ...Params });
+		await userList.findOneAndUpdate({ Mobileno: Params.Mobileno }, { ...Params });
+		return this.findUser({ ...Params });
 	}
 
 	public async deleteUser(Params: { Mobileno: string }) {
