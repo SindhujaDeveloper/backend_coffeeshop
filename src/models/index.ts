@@ -11,4 +11,10 @@ const UserSchema = new mongoose.Schema({
   Mobileno: Number,
 });
 
+const GallerySchema = new mongoose.Schema({
+  image: String,
+  imageName: String
+});
+
 export const userList = mongoose.model("users", UserSchema);
+export const galleryList = mongoose.model("galleries", GallerySchema);
