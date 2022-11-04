@@ -21,6 +21,7 @@
     "@decorators/express": "^2.6.0",
     "body-parser": "^1.20.0",
     "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^4.17.13",
     "mongoose": "^6.6.1",
     "ts-node": "^10.9.1"
