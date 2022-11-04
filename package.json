@@ -5,9 +5,7 @@
   "main": "index.ts",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "node --loader ts-node/esm src/index.ts",
-    "start": "nodemon src/index.ts"
+    "start": "nodemon --watch src -V --exec ts-node src/index.ts"
   },
   "keywords": [],
   "author": "",
