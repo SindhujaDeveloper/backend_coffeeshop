@@ -1,7 +1,7 @@
 import { attachControllers } from "@decorators/express";
 import express from 'express';
-import { UsersController } from "../controllers";
+import { UsersController, GalleryController } from "../controllers";
 
 export const publicRouter = express.Router();
 
-attachControllers(publicRouter, [UsersController]);
+attachControllers(publicRouter, [UsersController, GalleryController]);

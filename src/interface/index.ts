@@ -1,8 +1,2 @@
-export interface createUserInterface {
-	Firstname: string,
-	Lastname: string,
-	City: string,
-	Gender: string,
-	Birthdate: string,
-	Mobileno: string,
-}
+export * from "./user";
+export * from "./gallery"
