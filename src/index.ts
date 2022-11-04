@@ -12,4 +12,4 @@ app.use(bodyParser.json());
 
 app.use('/', publicRouter)
 
-app.listen(port, () => console.log(`Hello world app listening on port 3004!`));
+app.listen(port, () => console.log(`Hello world app listening on port 8080!`));
