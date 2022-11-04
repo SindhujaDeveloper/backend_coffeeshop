@@ -2,9 +2,9 @@ import bodyParser from 'body-parser';
 import express from 'express';
 import { publicRouter } from './router';
 import cors from 'cors';
+import * as dotenv from 'dotenv'
 
-require('dotenv').config()
-
+dotenv.config();
 const app = express();
 var port = process.env.PORT || 8080
 app.use(cors())
