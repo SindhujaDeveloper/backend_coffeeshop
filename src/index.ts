@@ -1,15 +1,16 @@
 import bodyParser from 'body-parser';
-import express from 'express';
 import { publicRouter } from './router';
 import cors from 'cors';
-import CryptoJS from 'crypto-js';
+// import CryptoJS from 'crypto-js';
 import crypto from 'crypto'
-import { v4 as uuidv4 } from 'uuid';
-
+// import { v4 as uuidv4 } from 'uuid';
+import * as dotenv from 'dotenv';
+import express from 'express';
+dotenv.config();
 
 const app = express();
-
-app.use(cors());
+var port = process.env.PORT || 8080
+app.use(cors())u
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -63,4 +64,4 @@ digest_and_decrypt(encrypted_data)
 //   console.log(response);
 // });
 
-app.listen(3004, () => console.log(`Hello world app listening on port 3004!`));
+app.listen(port, () => console.log(`Hello world app listening on port 8080!`));
