@@ -10,7 +10,7 @@ dotenv.config();
 
 const app = express();
 var port = process.env.PORT || 8080
-app.use(cors())u
+app.use(cors())
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
